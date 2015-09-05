@@ -41,6 +41,7 @@ re-downloaded in order to locate PACKAGE."
 
 
 ;;; programming language
+(require 'init-webmode)
 (require 'init-crontab)
 (require 'init-markdown)
 (require 'init-python)
@@ -58,3 +59,16 @@ re-downloaded in order to locate PACKAGE."
 
 
 (provide 'init)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(frame-background-mode (quote dark))
+ '(markdown-command "/usr/bin/pandoc"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
