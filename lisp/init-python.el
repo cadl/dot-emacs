@@ -1,3 +1,5 @@
 (require-package 'elpy)
+(global-set-key (kbd "C-c .") 'elpy-goto-definition)
+(global-set-key (kbd "C-c ,") 'pop-tag-mark)
 (elpy-enable)
 (provide 'init-python)
