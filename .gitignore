@@ -3,3 +3,6 @@ recentf
 smex-items
 elpa/
 auto-save-list/
+.emacs.desktop
+.emacs.desktop.lock
+projectile-bookmarks.eld
