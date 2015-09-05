@@ -24,6 +24,10 @@ re-downloaded in order to locate PACKAGE."
 (package-initialize)
 ;;; init elpa end
 
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setenv "PYTHONPATH" (concat (getenv "PATH") ":/usr/local/lib/python2.7/site-packages"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
 (when (eq system-type 'darwin)
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil))
