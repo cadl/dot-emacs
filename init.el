@@ -24,6 +24,10 @@ re-downloaded in order to locate PACKAGE."
 (package-initialize)
 ;;; init elpa end
 
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier nil))
+
 (require-package 'project-local-variables)
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
