@@ -59,12 +59,14 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-c)
 ;;; programming language
 
-(require 'init-spelling)
+;;;(require 'init-spelling)
 (require 'init-misc)
 (require 'init-local)
 
 (require-package 'rainbow-delimiters)
 (require-package 'ack)
 
+(custom-set-variables
+ '(markdown-command "/usr/bin/pandoc"))
 
 (provide 'init)
