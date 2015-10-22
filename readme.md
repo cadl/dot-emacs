@@ -29,4 +29,7 @@ pip install importmagic
 pip install autopep8
 ```
 
+install [racer](https://github.com/phildawes/racer) rust code completion backend
+
+
 Launch Emacs now.
