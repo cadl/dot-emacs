@@ -57,6 +57,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-javascript)
 (require 'init-css)
 (require 'init-c)
+(require 'init-rust)
 ;;; programming language
 
 ;;;(require 'init-spelling)
