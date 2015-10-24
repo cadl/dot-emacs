@@ -47,7 +47,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-mmm)
 (require 'init-git)
 (require 'init-helm)
-
+(require 'init-semantic)
 
 ;;; programming language
 (require 'init-webmode)
