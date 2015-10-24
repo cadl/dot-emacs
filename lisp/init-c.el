@@ -1,7 +1,9 @@
 (require-package 'irony)
 (require-package 'company-irony)
+(require-package 'ggtags)
 
 (add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c++-mode-hook 'ggtags-mode)
 (add-hook 'c-mode-hook 'irony-mode)
 (add-hook 'objc-mode-hook 'irony-mode)
 
@@ -13,9 +15,9 @@
 
 (add-hook 'c-mode-hook
           '(lambda ()
-             (semantic-mode)
+             (ggtags-mode)
              (local-set-key (kbd "C-c ,") 'pop-tag-mark)
-             (local-set-key (kbd "C-c .") 'semantic-ia-fast-jump)))
+             (local-set-key (kbd "C-c .") (kbd "M-."))))
 
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-irony))
