@@ -1,9 +1,9 @@
 (require-package 'elpy)
 
+(elpy-enable)
 
 (add-hook 'python-mode-hook
     '(lambda ()
-       (elpy-mode)
        (local-set-key "\C-c." 'elpy-goto-definition)
        (local-set-key "\C-c," 'pop-tag-mark)))
 
