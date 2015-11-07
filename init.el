@@ -50,6 +50,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-semantic)
 
 ;;; programming language
+(require 'init-tex)
 (require 'init-webmode)
 (require 'init-crontab)
 (require 'init-markdown)
