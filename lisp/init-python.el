@@ -2,6 +2,9 @@
 
 (elpy-enable)
 
+(custom-set-variables
+ '(elpy-eldoc-show-current-function nil))
+
 (add-hook 'python-mode-hook
     '(lambda ()
        (local-set-key "\C-c." 'elpy-goto-definition)
