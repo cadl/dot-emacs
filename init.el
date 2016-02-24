@@ -59,6 +59,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-css)
 (require 'init-c)
 (require 'init-rust)
+(require 'init-go)
 ;;; programming language
 
 ;;;(require 'init-spelling)
