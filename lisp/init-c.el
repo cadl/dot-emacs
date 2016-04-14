@@ -10,8 +10,8 @@
 (add-hook 'irony-mode-hook
           '(lambda ()
              (company-mode)
-             (company-irony)
-             (irony-cdb-autosetup-complie-option)))
+             (setq flycheck-clang-include-path '("/usr/local/include"))))
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 (add-hook 'c-mode-hook
           '(lambda ()
