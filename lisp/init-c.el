@@ -13,7 +13,7 @@
              (setq flycheck-clang-include-path '("/usr/local/include"))))
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
-(add-hook 'c-mode-hook
+(add-hook 'irony-mode-hook
           '(lambda ()
              (ggtags-mode)
              (local-set-key (kbd "C-c ,") 'pop-tag-mark)
