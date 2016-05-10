@@ -48,6 +48,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-git)
 (require 'init-helm)
 (require 'init-semantic)
+(require 'init-projectile)
 
 ;;; programming language
 (require 'init-tex)
