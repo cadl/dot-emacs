@@ -61,6 +61,8 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-c)
 (require 'init-rust)
 (require 'init-go)
+(require 'init-scala)
+(require 'init-yaml)
 ;;; programming language
 
 ;;;(require 'init-spelling)
@@ -71,6 +73,18 @@ re-downloaded in order to locate PACKAGE."
 (require-package 'ack)
 
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(elpy-eldoc-show-current-function nil)
+ '(js2-basic-offset 2)
  '(markdown-command "/usr/bin/pandoc"))
 
 (provide 'init)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
