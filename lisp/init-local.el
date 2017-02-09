@@ -1,4 +1,5 @@
 (require-package 'exec-path-from-shell)
+(require-package 'bind-key)
 
 (blink-cursor-mode 0)
 (desktop-save-mode 0)
@@ -9,4 +10,12 @@
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
+
+;;---------------------------------------------------------------------------
+;; global key binding
+;;---------------------------------------------------------------------------
+
+(bind-key* "M-n" 'highlight-symbol-next)
+(bind-key* "M-p" 'highlight-symbol-prev)
+
 (provide 'init-local)
