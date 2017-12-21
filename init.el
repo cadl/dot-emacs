@@ -63,6 +63,7 @@ re-downloaded in order to locate PACKAGE."
 (require 'init-go)
 (require 'init-scala)
 (require 'init-yaml)
+(require 'init-dot)
 ;;; programming language
 
 ;;;(require 'init-spelling)
@@ -78,8 +79,11 @@ re-downloaded in order to locate PACKAGE."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(elpy-eldoc-show-current-function nil)
- '(js2-basic-offset 2)
- '(markdown-command "/usr/bin/pandoc"))
+ '(js2-basic-offset 2 t)
+ '(markdown-command "/usr/bin/pandoc")
+ '(package-selected-packages
+   (quote
+    (yaml-mode whole-line-or-region whitespace-cleanup-mode web-mode unfill undo-tree smex skewer-less scss-mode scratch sass-mode rtags rainbow-mode rainbow-delimiters racer projectile project-local-variables page-break-lines mwe-log-commands multiple-cursors move-text mmm-mode markdown-mode magit less-css-mode latex-preview-pane json-mode idomenu ido-ubiquitous ibuffer-vc highlight-symbol highlight-escape-sequences helm guide-key graphviz-dot-mode git-gutter ggtags flycheck fill-column-indicator expand-region exec-path-from-shell ensime elpy el-get diminish css-eldoc crontab-mode company-irony company-go color-theme-solarized coffee-mode cmake-ide bind-key auctex ack ace-jump-mode ac-js2))))
 
 (provide 'init)
 (custom-set-faces
